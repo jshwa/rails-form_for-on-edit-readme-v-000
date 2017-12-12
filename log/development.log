@@ -844,3 +844,11 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
   Rendered posts/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/3" for 66.69.239.17 at 2017-12-12 22:46:42 +0000
+Cannot render console from 66.69.239.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJuaB8jwLSOqGN8uPb6l3nNGL0PxgH+mIexPIWzuiVHwfW5Jy94A+V3TehhQj2Z8HOwggZT+Js42apl6fxxZ/Q==", "post"=>{"title"=>"Hello", "description"=>""}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
